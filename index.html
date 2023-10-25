@@ -6,53 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake Franklins Blog!</title>
+    <link rel="stylesheet" href="normalise.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <!-- Navbar -->
 
 <body>
-    <div id="wrapper">
-        <a id="top"></a>
+    <a id="top"></a>
 
-        <div class="container">
-            <nav class="navbar">
-                <div class="header-logo">
-                    <img src="output-onlinepngtools.png" alt=" Header logo">
-                </div>
-                <ul class=" links">
-                    <li><a href="#">Learning Journal</a></li>
-                    <li><a href="tutorial.html">Tutorial</a></li>
-                    <li><a href="/sign-up-form/odin-sign-up/index.html" target="_blank">Contact Me</a></li>
-                </ul>
-            </nav>
+    <div class="container">
+        <nav class="navbar">
+            <div class="header-logo">
+                <img src="output-onlinepngtools.png" alt=" Header logo">
+            </div>
+            <ul class=" links">
+                <li><a href="#">Learning Journal</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="/sign-up-form/odin-sign-up/index.html" target="_blank">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Heading -->
+
+    <header class="header">
+        <div class="header-cta">
+            <h1>Jake Franklin Learning Journal</h1>
+            <p>This website is my dedicated learning journal for my degree at Brighton University. I have some
+                previous
+                experience with self-tutored Web Development using The Odin Project as my guide. However, I am a bit
+                out
+                of practice!</p>
         </div>
 
-        <!-- Hero Page -->
+        <div class="header-image">
+            <figure>
+                <img src="compsci.jpg" alt="Generic Computer Science Image">
+                <figcaption>Copyright &copy; 1990 Some Computer Science Guy</figcaption>
+            </figure>
+        </div>
 
-        <header class="hero">
-            <div class="hero-cta">
-                <h1>Jake Franklin Learning Journal</h1>
-                <p>This website is my dedicated learning journal for my degree at Brighton University. I have some
-                    previous
-                    experience with self-tutored Web Development using The Odin Project as my guide. However, I am a bit
-                    out
-                    of practice!</p>
-            </div>
+    </header>
 
-            <div class="hero-image">
-                <figure>
-                    <img src="compsci.jpg" alt="Generic Computer Science Image">
-                    <figcaption>Copyright &copy; 1990 Some Computer Science Guy</figcaption>
-                </figure>
-            </div>
+    <!-- Table/Timetable -->
+    <div id="wrapper">
 
-        </header>
-
-        <!-- Table/Timetable -->
         <div class="timetable">
 
-            <table class="center">
+            <table class="timetable">
                 <caption id="timetableCaption">Jake Franklin's Timetable</caption>
                 <thead>
                     <tr>
@@ -149,32 +151,60 @@
             <h2>Weekly Blog</h2>
 
             <article class="content">
+                <b>Week 4</b>
+                <h3>Publish <time datetime="2023-10-23">date: 06/10/2023</time></h3>
+                <p></p>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+                <ul class="references">
+                    <li><a href="#">Ref</a></li>
+                    <li><a href="#">Ref</a></li>
+                    <li><a href="#">Ref</a></li>
+                </ul>
+                <p><a href="#top">To the top!</a></p>
+            </article>
+
+            <article class="content">
                 <b>Week 3 </b>
                 <h3>Publish <time datetime="2023-10-18">date: 18/10/2023</time></h3>
 
-                <dl class="descriptions">
-                    <dt><strong>HTML</strong></dt>
-                      <dd>Hyper-text markup language - markup language used to structure content</dd>
-                    <dt><strong>CSS</strong></dt>
-                      <dd>Cascading stylesheets - used to define presentation of HTML elements</dd>
-                    <dt><strong>JavaScript</strong></dt>
-                      <dd>Scripting language for adding interactive behaviour to web pages</dd>
-                  </dl>
-                <p>This week i focussed on making the website more responsive, alongside creating a table to detail my
-                    University timetable. I also worked on nested lists as well. I originally had my entire web page as
-                    Divs and learned this is extremely bad practice, so I have replaced everything with semantic HTML as
-                    of week 3.</p>
+
+                <p>This week I focussed on making the website more responsive, alongside creating a table to detail
+                    my
+                    University timetable. I also worked on nested lists as well. I originally had my entire web page
+                    as
+                    Divs and learned this is extremely bad practice, so I have replaced everything with semantic
+                    HTML as
+                    of week 3. I also played around with description lists.</p>
+
 
                 <blockquote>
-                    <p><em id="semanticsQuote">Semantics is a branch of linguistics which focuses on meaning. When web designers talk about a
-                        semantic web, it's a conversation about the use of HTML tags and structure to convey meaning.
-                        HTML5 introduces a plethora of tags that can be used to structure content in order to make it
-                        meaningful to a machine.</em></p>
+                    <p><em id="semanticsQuote">Semantics is a branch of linguistics which focuses on meaning. When
+                            web
+                            designers talk about a
+                            semantic web, it's a conversation about the use of HTML tags and structure to convey
+                            meaning.
+                            HTML5 introduces a plethora of tags that can be used to structure content in order to
+                            make
+                            it
+                            meaningful to a machine.</em></p>
                     <footer id="quote">
                         <cite><a href="https://pressbooks.library.torontomu.ca/webdesign/chapter/chapter-4-semantics">
                                 Web Design Primer</a> by Richard Adams and Ahmed Sagarwala</cite>
                     </footer>
                 </blockquote>
+
+                <dl class="descriptions">
+                    <dt><strong>HTML</strong></dt>
+                    <dd>Hyper-text markup language - think of it as the "Skeleton" of the page.</dd>
+                    <dt><strong>CSS</strong></dt>
+                    <dd>Cascading stylesheets - think of it as the "Design" of the page.</dd>
+                    <dt><strong>JavaScript</strong></dt>
+                    <dd>An object-oriented programming language, think of it as the "Function" of the page.</dd>
+                </dl>
 
                 <ol>
                     <li>Week 1
@@ -187,7 +217,8 @@
                     <li>Week 2
                         <ul>
                             <li>Learned more about responsive web design</li>
-                            <li>Realised I had learned some bad practices, using divs for everything instead of semantic
+                            <li>Realised I had learned some bad practices, using divs for everything instead of
+                                semantic
                                 HMTL</li>
                         </ul>
                     </li>
@@ -200,8 +231,11 @@
                 </ol>
 
                 <ul class="references">
-                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">w3schools Semantic Elements
+                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">w3schools Semantic
+                            Elements
                             page</a></li>
+                    <li><a href="https://pressbooks.library.torontomu.ca/webdesign/chapter/chapter-4-semantics">
+                            Web Design Primer</a></li>
                 </ul>
                 <p><a href="#top">To the top!</a></p>
             </article>
@@ -209,17 +243,23 @@
             <article class="content">
                 <b>Week 2</b>
                 <h3>Publish date: 06/10/2023</h3>
-                <p>In the second week I spent some more time on the structure of the website. It's still a lot of stuff
+                <p>In the second week I spent some more time on the structure of the website. It's still a lot of
+                    stuff
                     I
-                    already knew, but served as a nice refresher regardless. I did add some navigation to my page via
+                    already knew, but served as a nice refresher regardless. I did add some navigation to my page
+                    via
                     the
-                    use of anchors, and also further seperated everything with navbar, footer and figure tags.<br><br>I
+                    use of anchors, and also further seperated everything with navbar, footer and figure
+                    tags.<br><br>I
                     did
                     manage
-                    to further increase the responsiveness of my website via Media queries @media screen and (max-width:
-                    800px) and @media screen and (max-width: 389px), the former line of code moves the hero image below
+                    to further increase the responsiveness of my website via Media queries @media screen and
+                    (max-width:
+                    800px) and @media screen and (max-width: 389px), the former line of code moves the hero image
+                    below
                     the
-                    welcome text for those with tablets or smaller screens, and the latter removes the image entirely
+                    welcome text for those with tablets or smaller screens, and the latter removes the image
+                    entirely
                     for
                     people on phones smaller than an Iphone 13 pro. Some things I want to do next:</p>
                 <ol>
@@ -231,7 +271,8 @@
 
                 <figure class="blog-image-container">
                     <img src="iphone.png" class="blog-photo" alt="How this website appears on an Iphone">
-                    <figcaption class="caption"><small>How the website looks on an Iphone 13 Pro</small></figcaption>
+                    <figcaption class="caption"><small>How the website looks on an Iphone 13 Pro</small>
+                    </figcaption>
                 </figure>
 
                 <p><a href="#top">To the top!</a></p>
@@ -240,11 +281,13 @@
             <article class="content">
                 <b><br>Week 1</b>
                 <h3>Publish <time datetime="2023-10-06">date: 06/10/2023</time></h3>
-                <p>In the first week I was unable to access brighton.domains so instead I worked on the basic layout of
+                <p>In the first week I was unable to access brighton.domains so instead I worked on the basic layout
+                    of
                     this
                     webpage and sent an email to the tech desk asking for access. I haven't done any Web Dev since
                     around July
-                    2022 so definitely needed some refreshers! I used the lab practicals to help me familiarise myself
+                    2022 so definitely needed some refreshers! I used the lab practicals to help me familiarise
+                    myself
                     with HTML
                     again, I also revisited the resource I used to self-tutor Web Dev, which I shall be referencing
                     below. <br><br>My initial validation of this web page had 17(!!!) errors, which was quite eye
@@ -261,32 +304,33 @@
                     <ul class="references">
                         <li><a href="https://validator.w3.org">W3C Validation Service</a></li>
                         <li><a href="https://www.theodinproject.com">The Odin Project</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Web Documents</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Web Documents</a>
+                        </li>
                     </ul>
                 </aside>
                 <p><a href="#top">To the top!</a></p>
             </article>
-
         </main>
 
         <!-- Placeholder div -->
 
-        <!-- <div class="content">
-            <b>Week </b>
-            <h3>Publish <time datetime="2023-10-06">date: 06/10/2023</time></h3>
-            <p></p>
-            <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-            <ul class="references">
-                <li><a href="#">Ref</a></li>
-                <li><a href="#">Ref</a></li>
-                <li><a href="#">Ref</a></li>
-            </ul>
-            <p><a href="#top">To the top!</a></p>
-        </div> -->
+        <!-- <article class="content">
+                <b>Week </b>
+                <h3>Publish <time datetime="2023-10-06">date: 06/10/2023</time></h3>
+                <p></p>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+                <ul class="references">
+                    <li><a href="#">Ref</a></li>
+                    <li><a href="#">Ref</a></li>
+                    <li><a href="#">Ref</a></li>
+                </ul>
+            </div>
+                <p><a href="#top">To the top!</a></p>
+            </article> -->
 
         <!-- Footer -->
 
@@ -299,7 +343,6 @@
                 |
             </p>
         </footer>
-    </div>
 </body>
 
 </html>
