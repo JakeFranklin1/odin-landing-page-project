@@ -8,7 +8,7 @@ body {
     /* margin: 0;
     padding: 0; */
     text-align: center;
-    background-color: rgba(241, 238, 238, 0.516);
+    background-color: rgb(255 255 255);
 }
 
 #wrapper {
@@ -100,10 +100,12 @@ header h1 {
 }
 
 .timetable {
-    padding: 20px;
-    overflow-x: auto;
-    /* overflow-y: auto; */
-    /* 605 */
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0 1.5rem 0;
+    box-shadow: 0 0 20px 5px #0000001f;
+    /* overflow: hidden; */
 }
 
 table {
@@ -142,22 +144,28 @@ tr:nth-child(odd) td {
 
 .blog {
     display: flex;
-    background-color: #e5e7eb;
+    background-color: #fefeff;
     flex-direction: column;
 }
 
 .content {
-    height: 100%;
-    width: 100%;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0 1.5rem 0;
+    box-shadow: 0 0 20px 5px #0000001f;
+    overflow: hidden;
 }
 
 
 .blog h2 {
-    font-size: 28px;
-    font-style: italic;
-    font-weight: lighter;
-    color: #1f2937;
-    text-align: center;
+    font-size: 1.2em;
+    color: #FFF;
+    background-image: linear-gradient(90deg, #1F2937, #1F2937, #1F2937);
+    line-height: 1em;
+    padding: 20px;
+    border-radius: 40px;
+    margin: 1vw;
 }
 
 .blog b {
@@ -191,10 +199,10 @@ dl {
 
 /* Changes the colour for every nth Div to differentiate each blog post */
 
-main.blog>article:nth-of-type(even) {
+/* main.blog>article:nth-of-type(even) {
     background: #ffffff;
     padding-top: 20px;
-}
+} */
 
 .blog blockquote {
     padding: 1vw;
