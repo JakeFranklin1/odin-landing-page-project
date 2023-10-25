@@ -1,6 +1,9 @@
 :root {
-    --color: #00cbe6;
+    --button-color: #00cbe6;
     --txt: rgb(255, 255, 255);
+
+    --light-bg: white;
+    --light-text: #222430;
 }
 
 body {
@@ -8,7 +11,7 @@ body {
     /* margin: 0;
     padding: 0; */
     text-align: center;
-    background-color: rgb(255 255 255);
+    background-color: rgb(255, 255, 255);
 }
 
 #wrapper {

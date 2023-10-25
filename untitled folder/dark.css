@@ -1,0 +1,355 @@
+:root {
+    --color: #00cbe6;
+    --txt: rgb(255, 255, 255);
+}
+
+body {
+    font: normal 125%/1.4 Georgia, 'Times New Roman', Times, serif;
+    /* margin: 0;
+    padding: 0; */
+    text-align: center;
+    background-color: #1A232F;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header part */
+
+.navbar {
+    color: var(--txt);
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 0px 10px;
+    background-color: #161d27;
+    box-shadow: 0 10px 20px -1px rgb(24, 24, 24);
+}
+
+.header-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: auto;
+}
+
+.links {
+    list-style-type: none;
+    font-size: 18px;
+    display: flex;
+    margin-left: auto;
+    padding: 0px 10px 15px 0px;
+    color: white;
+}
+
+.navbar a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Welcome Area */
+
+header {
+    display: flex;
+    color: var(--txt);
+    background-color: #161d27;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 90px;
+    margin: 1.5rem;
+    border-radius: 40px;
+
+}
+
+.header-cta {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 0;
+}
+
+.header-cta p {
+    font-family: 'Roboto', arial;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--txt);
+    margin: 0;
+    font-family: 'Roboto', arial;
+    text-shadow: 5px 6px 2px rgb(0, 0, 0);
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 10px 20px -1px rgb(24, 24, 24),
+        inset 0 20px 20px -0px rgb(32, 32, 32);
+}
+
+.header-image figcaption {
+    font-size: 12px;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.timetable {
+    background: #131a23;
+    padding: 2rem;
+    border-radius: 40px;
+    margin: 1.5rem 0 1.5rem 0;
+    box-shadow: 0 0 20px 5px #0000001f;
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+
+td,
+th {
+    border: 1px solid rgb(0 0 0);
+    padding: 5px 10px;
+}
+
+th {
+    background-color: #161d27;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background-color: #161d27;
+}
+
+tr:nth-child(odd) td {
+    background-color: #1A232F;
+}
+
+/* Blog */
+
+.blog {
+    display: flex;
+    background-color: #1A232F;
+    flex-direction: column;
+}
+
+.content {
+    background: #131a23;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0 1.5rem 0;
+    box-shadow: 0 0 20px 2px #000000;
+    overflow: hidden;
+}
+
+
+.blog h2 {
+    font-size: 1.2em;
+    color: #f3f3f3;
+    background-color: #131a23;
+    line-height: 1em;
+    padding: 20px;
+    border-radius: 40px;
+    margin: 1vw;
+    box-shadow: 0 0 20px 0.1px #000000;
+}
+
+.blog b {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    /* padding-top: 200px; */
+}
+
+.blog p {
+    font-size: 18px;
+    padding: 0 10px 10px;
+    color: var(--txt);
+}
+
+.blog ul,
+ol,
+dl {
+    text-align: left;
+    color: #ffffff;
+}
+
+.blog-photo {
+    display: flex;
+    max-width: 20%;
+    align-items: center;
+}
+
+.blog figcaption {
+    text-align: left;
+}
+
+/* Changes the colour for every nth Div to differentiate each blog post */
+
+/* main.blog>article:nth-of-type(even) {
+    background: #ffffff;
+    padding-top: 20px;
+} */
+
+.blog blockquote {
+    padding: 1vw;
+}
+
+#quote {
+    background-color: transparent;
+    color: black;
+    font-size: 14px;
+}
+
+#semanticsQuote {
+    font-size: 16px;
+}
+
+.descriptions {
+    padding: 1vw;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #161d27;
+}
+
+/* Media query for smaller screens */
+
+@media screen and (max-width: 1050px) {
+    header {
+        padding: 50px;
+        margin: 0;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .blog-photo {
+        max-width: 35%;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    header {
+        padding: 40px
+    }
+
+    .blog-photo {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 10px 0 0 10px;
+    }
+
+    .header-logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .links {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .blog h2 {
+        font-size: 24px;
+    }
+
+    .blog b {
+        font-size: 24px;
+    }
+
+    .blog p {
+        font-size: 16px;
+        padding: 0 10px 10px;
+    }
+
+    .blog-photo {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .timetable {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding: 20px
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .blog-photo {
+        max-width: 60%;
+    }
+}
+
+/* Removes image on small phones */
+
+@media screen and (max-width: 389px) {
+
+    .header-image img,
+    figcaption {
+        display: none;
+    }
+
+    .blog-photo {
+        max-width: 60%;
+        /* max-height: 50%; */
+    }
+
+    .blog p {
+        font-size: 18px;
+        padding: 0 10px 10px;
+    }
+}

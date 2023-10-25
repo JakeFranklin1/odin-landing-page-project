@@ -5,316 +5,331 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake Franklins Blog!</title>
-    <link rel="stylesheet" href="normalise.css">
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Jake Franklins Learning Journal</title>
+
+    <link type="image/png" sizes="32x32" rel="icon" href="img/icons8-journal-color-hand-drawn-16.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="img/icons8-journal-color-hand-drawn-32.png">
+    <link type="image/png" sizes="16x16" rel="icon" href="img/icons8-journal-color-hand-drawn-96.png">
+
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <!-- Navbar -->
 
+
 <body>
-    <a id="top"></a>
+    <input type="checkbox" class="theme-switch" id="theme-switch">
 
-    <div class="container">
-        <nav class="navbar">
-            <div class="header-logo">
-                <img src="output-onlinepngtools.png" alt=" Header logo">
-            </div>
-            <ul class=" links">
-                <li><a href="#">Learning Journal</a></li>
-                <li><a href="tutorial.html">Tutorial</a></li>
-                <li><a href="/sign-up-form/odin-sign-up/index.html" target="_blank">Contact Me</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Heading -->
-
-    <header class="header">
-        <div class="header-cta">
-            <h1>Jake Franklin Learning Journal</h1>
-            <p>This website is my dedicated learning journal for my degree at Brighton University. I have some
-                previous
-                experience with self-tutored Web Development using The Odin Project as my guide. However, I am a bit
-                out
-                of practice!</p>
-        </div>
-
-        <div class="header-image">
-            <figure>
-                <img src="compsci.jpg" alt="Generic Computer Science Image">
-                <figcaption>Copyright &copy; 1990 Some Computer Science Guy</figcaption>
-            </figure>
-        </div>
-
-    </header>
-
-    <!-- Table/Timetable -->
     <div id="wrapper">
+        <a id="top"></a>
 
-        <div class="timetable">
+        <div class="container">
+            <nav class="navbar">
+                <div class="header-logo">
+                    <img src="img/output-onlinepngtools.png" alt=" Header logo">
+                </div>
+                <label for="theme-switch" class="switch-label"></label>
 
-            <table class="centertable">
-                <caption id="timetableCaption">Jake Franklin's Timetable</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Time</th>
-                        <th scope="col">Monday</th>
-                        <th scope="col">Tuesday</th>
-                        <th scope="col">Wednesday</th>
-                        <th scope="col">Thursday</th>
-                        <th scope="col">Friday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">9am</th>
-                        <td></td>
-                        <td>Cybersecurity<br>Huxley 300</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10am</th>
-                        <td></td>
-                        <td>Cybersecurity<br>Huxley 300</td>
-                        <td>Web Development<br>Huxley 300</td>
-                        <td>Programming<br>Cockroft 207</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">11am</th>
-                        <td></td>
-                        <td>Computing<br>Technologies<br>Huxley 300</td>
-                        <td></td>
-                        <td>Web Development<br>Huxley 300</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">12pm</th>
-                        <td></td>
-                        <td>Break</td>
-                        <td></td>
-                        <td>Break</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1pm</th>
-                        <td></td>
-                        <td>Break</td>
-                        <td></td>
-                        <td>Working in the<br>Computing Industry<br>Huxley 407</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2pm</th>
-                        <td>Computing<br>Technologies<br>Cockroft G50</td>
-                        <td>Cybersecurity<br>Huxley 300</td>
-                        <td></td>
-                        <td>Break</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3pm</th>
-                        <td>Break</td>
-                        <td>Cybersecurity<br>Huxley 300</td>
-                        <td></td>
-                        <td>Break</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4pm</th>
-                        <td>Programming<br>Huxley 300</td>
-                        <td></td>
-                        <td></td>
-                        <td>Programming<br>Cockroft 109</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5pm</th>
-                        <td>Working in the<br>Computing Industry<br>Huxley 300</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+                <ul class=" links">
+                    <li><a href="#">Learning Journal</a></li>
+                    <li><a href="pages/tutorial.html">Tutorial</a></li>
+                    <li><a href="pages/sign-up-form/odin-sign-up/index.html" target="_blank">Contact Me</a></li>
+                </ul>
 
+            </nav>
         </div>
 
-        <!-- Blog -->
+        <!-- Heading -->
 
-        <main class="blog">
+        <header class="header">
+            <div class="header-cta">
+                <h1>Jake Franklin Learning Journal</h1>
+                <p>This website is my dedicated learning journal for my degree at Brighton University. I have some
+                    previous
+                    experience with self-tutored Web Development using The Odin Project as my guide. However, I am a bit
+                    out
+                    of practice!</p>
+            </div>
 
-            <h2>Weekly Blog</h2>
-
-            <article class="content">
-                <b>Week 4</b>
-                <h3>Publish <time datetime="2023-10-23">date: 06/10/2023</time></h3>
-                <p></p>
-                <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
-                <ul class="references">
-                    <li><a href="#">Ref</a></li>
-                    <li><a href="#">Ref</a></li>
-                    <li><a href="#">Ref</a></li>
-                </ul>
-                <p><a href="#top">To the top!</a></p>
-            </article>
-
-            <article class="content">
-                <b>Week 3 </b>
-                <h3>Publish <time datetime="2023-10-18">date: 18/10/2023</time></h3>
-
-
-                <p>This week I focussed on making the website more responsive, alongside creating a table to detail
-                    my
-                    University timetable. I also worked on nested lists as well. I originally had my entire web page
-                    as
-                    Divs and learned this is extremely bad practice, so I have replaced everything with semantic
-                    HTML as
-                    of week 3. I also played around with description lists.</p>
-
-
-                <blockquote>
-                    <p><em id="semanticsQuote">Semantics is a branch of linguistics which focuses on meaning. When
-                            web
-                            designers talk about a
-                            semantic web, it's a conversation about the use of HTML tags and structure to convey
-                            meaning.
-                            HTML5 introduces a plethora of tags that can be used to structure content in order to
-                            make
-                            it
-                            meaningful to a machine.</em></p>
-                    <footer id="quote">
-                        <cite><a href="https://pressbooks.library.torontomu.ca/webdesign/chapter/chapter-4-semantics">
-                                Web Design Primer</a> by Richard Adams and Ahmed Sagarwala</cite>
-                    </footer>
-                </blockquote>
-
-                <dl class="descriptions">
-                    <dt><strong>HTML</strong></dt>
-                    <dd>Hyper-text markup language - think of it as the "Skeleton" of the page.</dd>
-                    <dt><strong>CSS</strong></dt>
-                    <dd>Cascading stylesheets - think of it as the "Design" of the page.</dd>
-                    <dt><strong>JavaScript</strong></dt>
-                    <dd>An object-oriented programming language, think of it as the "Function" of the page.</dd>
-                </dl>
-
-                <ol>
-                    <li>Week 1
-                        <ul>
-                            <li>Created index.hmtl and styles.css</li>
-                            <li>Designed basic layout of site</li>
-                            <li>Validated HTML and started making website responsive</li>
-                        </ul>
-                    </li>
-                    <li>Week 2
-                        <ul>
-                            <li>Learned more about responsive web design</li>
-                            <li>Realised I had learned some bad practices, using divs for everything instead of
-                                semantic
-                                HMTL</li>
-                        </ul>
-                    </li>
-                    <li>Week 3
-                        <ul>
-                            <li>Created a basic table of my University timetable for the website</li>
-                            <li>Worked some more on the responsiveness and learning better HTML practices</li>
-                        </ul>
-                    </li>
-                </ol>
-
-                <ul class="references">
-                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">w3schools Semantic
-                            Elements
-                            page</a></li>
-                    <li><a href="https://pressbooks.library.torontomu.ca/webdesign/chapter/chapter-4-semantics">
-                            Web Design Primer</a></li>
-                </ul>
-                <p><a href="#top">To the top!</a></p>
-            </article>
-
-            <article class="content">
-                <b>Week 2</b>
-                <h3>Publish date: 06/10/2023</h3>
-                <p>In the second week I spent some more time on the structure of the website. It's still a lot of
-                    stuff
-                    I
-                    already knew, but served as a nice refresher regardless. I did add some navigation to my page
-                    via
-                    the
-                    use of anchors, and also further seperated everything with navbar, footer and figure
-                    tags.<br><br>I
-                    did
-                    manage
-                    to further increase the responsiveness of my website via Media queries @media screen and
-                    (max-width:
-                    800px) and @media screen and (max-width: 389px), the former line of code moves the hero image
-                    below
-                    the
-                    welcome text for those with tablets or smaller screens, and the latter removes the image
-                    entirely
-                    for
-                    people on phones smaller than an Iphone 13 pro. Some things I want to do next:</p>
-                <ol>
-                    <li>Make the website look the same on every browser</li>
-                    <li>Make the blog section smaller</li>
-                    <li>Navigation list on left side of blog</li>
-                    <li>List of every reference used on the right side</li>
-                </ol>
-
-                <figure class="blog-image-container">
-                    <img src="iphone.png" class="blog-photo" alt="How this website appears on an Iphone">
-                    <figcaption class="caption"><small>How the website looks on an Iphone 13 Pro</small>
-                    </figcaption>
+            <div class="header-image">
+                <figure>
+                    <img src="img/compsci.jpg" alt="Generic Computer Science Image">
+                    <figcaption>Copyright &copy; 1990 Some Computer Science Guy</figcaption>
                 </figure>
+            </div>
 
-                <p><a href="#top">To the top!</a></p>
-            </article>
+        </header>
 
-            <article class="content">
-                <b><br>Week 1</b>
-                <h3>Publish <time datetime="2023-10-06">date: 06/10/2023</time></h3>
-                <p>In the first week I was unable to access brighton.domains so instead I worked on the basic layout
-                    of
-                    this
-                    webpage and sent an email to the tech desk asking for access. I haven't done any Web Dev since
-                    around July
-                    2022 so definitely needed some refreshers! I used the lab practicals to help me familiarise
-                    myself
-                    with HTML
-                    again, I also revisited the resource I used to self-tutor Web Dev, which I shall be referencing
-                    below. <br><br>My initial validation of this web page had 17(!!!) errors, which was quite eye
-                    opening.
-                    As of the
-                    day of me writing this, it currently has zero, and ideally, I'll be keeping it that way. I
-                    identified some massive opportunities for learning such as</p>
-                <ol>
-                    <li>Responsive website design</li>
-                    <li>The important of HTML validation</li>
-                    <li>Some new tags, such as Article</li>
-                </ol>
-                <aside>
+        <!-- Table/Timetable -->
+
+        <div id="contentWrap">
+            <div class="timetable">
+
+                <table>
+                    <caption id="timetableCaption">Jake Franklin's Timetable</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Monday</th>
+                            <th scope="col">Tuesday</th>
+                            <th scope="col">Wednesday</th>
+                            <th scope="col">Thursday</th>
+                            <th scope="col">Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">9am</th>
+                            <td></td>
+                            <td>Cybersecurity<br>Huxley 300</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10am</th>
+                            <td></td>
+                            <td>Cybersecurity<br>Huxley 300</td>
+                            <td>Web Development<br>Huxley 300</td>
+                            <td>Programming<br>Cockroft 207</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11am</th>
+                            <td></td>
+                            <td>Computing<br>Technologies<br>Huxley 300</td>
+                            <td></td>
+                            <td>Web Development<br>Huxley 300</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12pm</th>
+                            <td></td>
+                            <td>Break</td>
+                            <td></td>
+                            <td>Break</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1pm</th>
+                            <td></td>
+                            <td>Break</td>
+                            <td></td>
+                            <td>Working in the<br>Computing Industry<br>Huxley 407</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2pm</th>
+                            <td>Computing<br>Technologies<br>Cockroft G50</td>
+                            <td>Cybersecurity<br>Huxley 300</td>
+                            <td></td>
+                            <td>Break</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3pm</th>
+                            <td>Break</td>
+                            <td>Cybersecurity<br>Huxley 300</td>
+                            <td></td>
+                            <td>Break</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4pm</th>
+                            <td>Programming<br>Huxley 300</td>
+                            <td></td>
+                            <td></td>
+                            <td>Programming<br>Cockroft 109</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5pm</th>
+                            <td>Working in the<br>Computing Industry<br>Huxley 300</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- Blog -->
+
+            <main class="blog">
+
+                <h2>Weekly Blog</h2>
+
+                <article class="content">
+                    <b>Week 4</b>
+                    <h3>Publish <time datetime="2023-10-23">date: 06/10/2023</time></h3>
+                    <p></p>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
                     <ul class="references">
-                        <li><a href="https://validator.w3.org">W3C Validation Service</a></li>
-                        <li><a href="https://www.theodinproject.com">The Odin Project</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Web Documents</a>
-                        </li>
+                        <li><a href="#">Ref</a></li>
+                        <li><a href="#">Ref</a></li>
+                        <li><a href="#">Ref</a></li>
                     </ul>
-                </aside>
-                <p><a href="#top">To the top!</a></p>
-            </article>
-        </main>
+                    <p><a href="#top">To the top!</a></p>
+                </article>
 
-        <!-- Placeholder div -->
+                <article class="content">
+                    <b>Week 3 </b>
+                    <h3>Publish <time datetime="2023-10-18">date: 18/10/2023</time></h3>
 
-        <!-- <article class="content">
+
+                    <p>This week I focussed on making the website more responsive, alongside creating a table to detail
+                        my
+                        University timetable. I also worked on nested lists as well. I originally had my entire web page
+                        as
+                        Divs and learned this is extremely bad practice, so I have replaced everything with semantic
+                        HTML as
+                        of week 3. I also played around with description lists.</p>
+
+
+                    <blockquote>
+                        <p><em id="semanticsQuote">Semantics is a branch of linguistics which focuses on meaning. When
+                                web
+                                designers talk about a
+                                semantic web, it's a conversation about the use of HTML tags and structure to convey
+                                meaning.
+                                HTML5 introduces a plethora of tags that can be used to structure content in order to
+                                make
+                                it
+                                meaningful to a machine.</em></p>
+                        <footer id="quote">
+                            <cite><a
+                                    href="https://pressbooks.library.torontomu.ca/webdesign/chapter/chapter-4-semantics">
+                                    Web Design Primer</a> by Richard Adams and Ahmed Sagarwala</cite>
+                        </footer>
+                    </blockquote>
+
+                    <dl class="descriptions">
+                        <dt><strong>HTML</strong></dt>
+                        <dd>Hyper-text markup language - think of it as the "Skeleton" of the page.</dd>
+                        <dt><strong>CSS</strong></dt>
+                        <dd>Cascading stylesheets - think of it as the "Design" of the page.</dd>
+                        <dt><strong>JavaScript</strong></dt>
+                        <dd>An object-oriented programming language, think of it as the "Function" of the page.</dd>
+                    </dl>
+
+                    <ol>
+                        <li>Week 1
+                            <ul>
+                                <li>Created index.hmtl and styles.css</li>
+                                <li>Designed basic layout of site</li>
+                                <li>Validated HTML and started making website responsive</li>
+                            </ul>
+                        </li>
+                        <li>Week 2
+                            <ul>
+                                <li>Learned more about responsive web design</li>
+                                <li>Realised I had learned some bad practices, using divs for everything instead of
+                                    semantic
+                                    HMTL</li>
+                            </ul>
+                        </li>
+                        <li>Week 3
+                            <ul>
+                                <li>Created a basic table of my University timetable for the website</li>
+                                <li>Worked some more on the responsiveness and learning better HTML practices</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <ul class="references">
+                        <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">w3schools Semantic
+                                Elements
+                                page</a></li>
+                        <li><a href="https://pressbooks.library.torontomu.ca/webdesign/chapter/chapter-4-semantics">
+                                Web Design Primer</a></li>
+                    </ul>
+                    <p><a href="#top">To the top!</a></p>
+                </article>
+
+                <article class="content">
+                    <b>Week 2</b>
+                    <h3>Publish date: 06/10/2023</h3>
+                    <p>In the second week I spent some more time on the structure of the website. It's still a lot of
+                        stuff
+                        I
+                        already knew, but served as a nice refresher regardless. I did add some navigation to my page
+                        via
+                        the
+                        use of anchors, and also further seperated everything with navbar, footer and figure
+                        tags.<br><br>I
+                        did
+                        manage
+                        to further increase the responsiveness of my website via Media queries @media screen and
+                        (max-width:
+                        800px) and @media screen and (max-width: 389px), the former line of code moves the hero image
+                        below
+                        the
+                        welcome text for those with tablets or smaller screens, and the latter removes the image
+                        entirely
+                        for
+                        people on phones smaller than an Iphone 13 pro. Some things I want to do next:</p>
+                    <ol>
+                        <li>Make the website look the same on every browser</li>
+                        <li>Make the blog section smaller</li>
+                        <li>Navigation list on left side of blog</li>
+                        <li>List of every reference used on the right side</li>
+                    </ol>
+
+                    <figure class="blog-image-container">
+                        <img src="img/iphone.png" class="blog-photo" alt="How this website appears on an Iphone">
+                        <figcaption class="caption"><small>How the website looks on an Iphone 13 Pro</small>
+                        </figcaption>
+                    </figure>
+
+                    <p><a href="#top">To the top!</a></p>
+                </article>
+
+                <article class="content">
+                    <b>Week 1</b>
+                    <h3>Publish <time datetime="2023-10-06">date: 06/10/2023</time></h3>
+                    <p>In the first week I was unable to access brighton.domains so instead I worked on the basic layout
+                        of
+                        this
+                        webpage and sent an email to the tech desk asking for access. I haven't done any Web Dev since
+                        around July
+                        2022 so definitely needed some refreshers! I used the lab practicals to help me familiarise
+                        myself
+                        with HTML
+                        again, I also revisited the resource I used to self-tutor Web Dev, which I shall be referencing
+                        below. <br><br>My initial validation of this web page had 17(!!!) errors, which was quite eye
+                        opening.
+                        As of the
+                        day of me writing this, it currently has zero, and ideally, I'll be keeping it that way. I
+                        identified some massive opportunities for learning such as</p>
+                    <ol>
+                        <li>Responsive website design</li>
+                        <li>The important of HTML validation</li>
+                        <li>Some new tags, such as Article</li>
+                    </ol>
+                    <aside>
+                        <ul class="references">
+                            <li><a href="https://validator.w3.org">W3C Validation Service</a></li>
+                            <li><a href="https://www.theodinproject.com">The Odin Project</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Web Documents</a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <p><a href="#top">To the top!</a></p>
+                </article>
+            </main>
+
+            <!-- Placeholder div -->
+
+            <!-- <article class="content">
                 <b>Week </b>
                 <h3>Publish <time datetime="2023-10-06">date: 06/10/2023</time></h3>
                 <p></p>
@@ -332,7 +347,9 @@
                 <p><a href="#top">To the top!</a></p>
             </article> -->
 
-        <!-- Footer -->
+            <!-- Footer -->
+
+        </div>
     </div>
 
     <footer id="website-footer">
